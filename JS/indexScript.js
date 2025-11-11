@@ -12,8 +12,6 @@ window.addEventListener("DOMContentLoaded", fetchData);
 
 // ----- FUNCTIONS -----
 
-// ON START
-
 // gets data from the api
 async function fetchData() {
 
@@ -27,7 +25,9 @@ async function fetchData() {
 
         // check response
         if (!response.ok) {
+
             throw new Error("response status =",response.status); 
+
         };
 
         // load data
@@ -59,6 +59,9 @@ const enableLinks = function() {
         link.classList.add("header__link--active");
 
     });
+
+    deactiveLinks[0].href = "/statsGame.html"
+    // ADD THE OTHER GAME LATER OKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
 
 };
 
@@ -125,7 +128,9 @@ const fetchPokemonURL = async function() {
 
         // check response
         if (!response.ok) {
-            throw new Error("response status =",response.status); 
+
+            throw new Error("response status =",response.status);
+
         };
 
         // load data

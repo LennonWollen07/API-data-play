@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats Game</title>
+
+    <!-- links to the CSS and JS files -->
+    <link rel="stylesheet" href="CSS/statsGameStyle.css">
+    <script src="/JS/statsGameScript.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- the header -->
+    <header>
+
+        <!-- image in the header -->
+        <a href="/index.html">
+            <img src="/Images/pokeball.png" id="header__image">
+        </a>
+
+        <!-- header links -->
+        <a href="/index.html" class="header__link header__link--active">Home</a>
+        <a href="" class="header__link header__link--deactive">Stats Game</a>
+        <a href="" class="header__link header__link--deactive">Type Game</a>
+
+    </header>
+
+    <div id="container">
+
+        <!-- contains the page title -->
+        <div id="container__titleBox">
+
+            <h1>Stat Game</h1>
+
+        </div>
+
+        <div id="container__gameModes">
+
+            <div id="container__gameModes__title">
+
+                <p>Game Mode</p>
+
+            </div>
+
+            <div id="container__gameModes__modes">
+
+                <input type="button" value="HP" class="container__gameModes__modes__input">
+                <input type="button" value="ATK" class="container__gameModes__modes__input">
+                <input type="button" value="DEF" class="container__gameModes__modes__input">
+                <input type="button" value="S.ATK" class="container__gameModes__modes__input">
+                <input type="button" value="S.DEF" class="container__gameModes__modes__input">
+                <input type="button" value="SPD" class="container__gameModes__modes__input">
+                <input type="button" value="TOTAL" class="container__gameModes__modes__input">
+
+            </div>
+
+        </div>
+
+        <div id="container__gameSpace">
+
+            <div id="container__gameSpace"></div>
+
+        </div> 
+
+    </div>
+
+</body>
+
+</html>

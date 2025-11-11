@@ -1,0 +1,124 @@
+/* ----- NATIVE HTML ----- */
+
+/* sets the margin to 0 and default font */
+* {
+    margin: 0%;
+    font-family: monospace;
+}
+
+/* sets the header dimensions */
+header {
+    width: 100vw;
+    height: 8vh;
+    background-color: #ee1515;
+    display: flex;
+    align-items: center;
+}
+
+/* ----- CLASSES ----- */
+
+/* --- HEADER --- */
+
+/* styles the links in the header */
+.header__link {
+    font-size: 3vh;
+    margin-left: 2vw;
+    text-decoration: none;
+}
+
+/* sets the colour of active links */
+.header__link--active {
+    color:#000000;
+}
+
+/* when an active link is hovered over */
+.header__link--active:hover {
+    color:#15eeee;
+}
+
+/* when and active link is clicked on */
+.header__link--active:active {
+    color: #0000ff;
+}
+
+/* when a link is not active, deactive when api is not loaded */
+.header__link--deactive {
+    color:#888888;
+    cursor: not-allowed;
+}
+
+/* --- MAIN CONTENT --- */
+
+/* styles the input boxes at the top of the page */
+.container__gameModes__modes__input {
+    font-size: 1.5vh;
+    margin-top: 5px;
+}
+
+
+
+
+
+/* ----- IDS ----- */
+
+/* --- HEADER --- */
+
+/* the pokeball in the header */
+#header__image {
+    height: 7vh;
+    margin-left: 1vw;
+}
+
+/* --- MAIN CONTENT --- */
+
+
+/* holds the main content */
+#container {
+    width: 100vw;
+    height: 92vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* contains the page title */
+#container__titleBox {
+    width:100vw;
+    height:6vh;
+    font-size: 3.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* holds the game modes section at the top of the page */
+#container__gameModes {
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* contains the gamemode's title */
+#container__gameModes__title {
+    width:100vw;
+    height:3vh;
+    font-size: 3vh;
+    text-align: center;
+}
+
+/* contains the gamemodes links */
+#container__gameModes__modes {
+    width: 100vw;
+    height: 3vh;
+    text-align: center;
+}
+
+/* holds the main game elements */
+#container__gameSpace {
+    width: 100vw;
+    height: 80vh;
+    background-color: #0000ff;
+}
