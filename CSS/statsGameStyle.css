@@ -55,7 +55,24 @@ header {
     margin-top: 5px;
 }
 
+/* sets columns for the game space */
+.container__gameSpace__column {
+    width:50vw;
+    height:65vh;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+/* conatiner hwere the pokemon image will be put */
+.container__gameSpace__column__image {
+    width:30vw;
+    height:30vw;
+    background-image: url(/Images/pokeball.png);
+    background-size: contain;
+}
 
 
 
@@ -119,6 +136,26 @@ header {
 /* holds the main game elements */
 #container__gameSpace {
     width: 100vw;
-    height: 80vh;
-    background-color: #0000ff;
+    height: 65vh;
+    display: flex;
+}
+
+/* styles the points container */
+#container__points {
+    width:100vw;
+    height: 5vh;
+    font-size: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* container for text at the bottom of the page */
+#container__bottom {
+    width: 100vw;
+    height: 10vh;
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

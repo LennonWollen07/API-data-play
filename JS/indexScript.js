@@ -12,6 +12,8 @@ window.addEventListener("DOMContentLoaded", fetchData);
 
 // ----- FUNCTIONS -----
 
+// --- ON START ---
+
 // gets data from the api
 async function fetchData() {
 
@@ -65,13 +67,16 @@ const enableLinks = function() {
 
 };
 
-// ----- Main content -----
+// --- Main content ---
 
 // on button click
 document.getElementById("container__inputBox__inputs__button").addEventListener("click", function() {
 
+    // checks if you entered a valid pokemon name
+    inputValue = document.getElementById("container__inputBox__inputs__text").value.toLowerCase();
+
     // finds the pokemon entered
-    findPokemon();
+    findPokemon(inputValue);
 
 });
 
@@ -81,18 +86,18 @@ document.getElementById("container__inputBox__inputs__text").addEventListener("k
     // enter key is pressed
     if (e.key == "Enter") {
 
+        // checks if you entered a valid pokemon name
+        inputValue = document.getElementById("container__inputBox__inputs__text").value.toLowerCase();
+
         // finds the pokemone entered
-        findPokemon();
+        findPokemon(inputValue);
 
     };
 
 });
 
 // finds if the pokemon entered is valid
-const findPokemon = function() {
-
-    // checks if you entered a valid pokemon name
-    inputValue = document.getElementById("container__inputBox__inputs__text").value.toLowerCase();
+const findPokemon = function(inputValue) {
 
     // sets found to false
     let foundPokemon = false

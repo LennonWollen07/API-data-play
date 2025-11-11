@@ -8,11 +8,12 @@ let apiData;
 window.addEventListener("DOMContentLoaded", fetchData);
 
 // variables
-gameMode = null;
+let gameMode = null;
+let score = 0;
 
 // ----- FUNCTIONS -----
 
-// ON START
+// --- ON START ---
 
 // gets data from the api
 async function fetchData() {
@@ -63,14 +64,37 @@ const enableLinks = function() {
     });
 
     deactiveLinks[0].href = "/statsGame.html"
-    // ADD THE OTHER GAME LATER OKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
 
 };
 
-// ----- MAIN CONTENT -----
+// --- MAIN CONTENT ---
+
+// when game mode is switched, change text, reset score
 document.querySelectorAll(".container__gameModes__modes__input").forEach(button => {
+
+    // when button is clicked
     button.addEventListener("click", () => {
+
+        // game mode is changed to corresponding button
         gameMode = button.value;
-        console.log(gameMode);
+
+        // change gamemode text at the top
+        document.getElementById("container__gameModes__title__text").innerHTML = `GameMode - ${gameMode}`
+
+        // change text in the columns
+        document.querySelectorAll(".container__gameSpace__column__stat").forEach(text => {
+
+            text.innerHTML = `${gameMode} - ?`
+
+        })
+
+        // reset score
+        score = 0;
+        document.getElementById("container__points__score").innerHTML = `Points: ${score}`
+
+        // chnage question at the bottom
+        document.getElementById("container__bottom__text").innerHTML = `Who has a higher ${gameMode} stat?`
+
     });
+
 });

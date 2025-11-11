@@ -27,7 +27,6 @@
         <!-- header links -->
         <a href="/index.html" class="header__link header__link--active">Home</a>
         <a href="" class="header__link header__link--deactive">Stats Game</a>
-        <a href="" class="header__link header__link--deactive">Type Game</a>
 
     </header>
 
@@ -40,14 +39,18 @@
 
         </div>
 
+        <!-- the top of the page content space -->
         <div id="container__gameModes">
 
+            <!-- holds the page title -->
             <div id="container__gameModes__title">
 
-                <p>Game Mode</p>
+                <!-- title text -->
+                <p id="container__gameModes__title__text">GameMode - HP</p>
 
             </div>
 
+            <!-- holds thes game mode buttons -->
             <div id="container__gameModes__modes">
 
                 <input type="button" value="HP" class="container__gameModes__modes__input">
@@ -62,11 +65,50 @@
 
         </div>
 
+        <!-- holds the main game content -->
         <div id="container__gameSpace">
 
-            <div id="container__gameSpace"></div>
+            <!-- left column -->
+            <div class="container__gameSpace__column">
 
-        </div> 
+                <!-- holds the pokemon image -->
+                <div class="container__gameSpace__column__image"></div>
+
+                <!-- infomation -->
+                <p class="container__gameSpace__column__name">name</p>
+                <p class="container__gameSpace__column__stat">HP - ?</p>
+
+            </div>
+
+            <!-- right column -->
+            <div class="container__gameSpace__column">
+
+                <!-- holds the pokemon image -->
+                <div class="container__gameSpace__column__image"></div>
+
+                <!-- infomation -->
+                <p class="container__gameSpace__column__name">name</p>
+                <p class="container__gameSpace__column__stat">HP - ?</p>
+
+            </div>
+
+        </div>
+
+        <!-- holds the current score -->
+        <div id="container__points">
+
+            <!-- current score -->
+            <p id="container__points__score">Points: 0</p>
+
+        </div>
+
+        <!-- holds the game mode question -->
+        <div id="container__bottom">
+
+            <!-- question text -->
+            <p id="container__bottom__text">Who has a higher HP stat?</p>
+
+        </div>
 
     </div>
 
