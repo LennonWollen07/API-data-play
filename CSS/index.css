@@ -1,0 +1,188 @@
+/* ----- NATIVE HTML ----- */
+
+/* sets the margin to 0 and default font */
+* {
+    margin: 0%;
+    font-family: monospace;
+}
+
+/* sets the header dimensions */
+header {
+    width: 100vw;
+    height: 8vh;
+    background-color: #ee1515;
+    display: flex;
+    align-items: center;
+}
+
+/* ----- CLASSES ----- */
+
+/* --- HEADER --- */
+
+/* styles the links in the header */
+.header__link {
+    font-size: 3vh;
+    margin-left: 2vw;
+    text-decoration: none;
+}
+
+/* sets the colour of active links */
+.header__link--active {
+    color:#000000;
+}
+
+/* when an active link is hovered over */
+.header__link--active:hover {
+    color:#15eeee;
+}
+
+/* when and active link is clicked on */
+.header__link--active:active {
+    color: #0000ff;
+}
+
+/* when a link is not active, deactive when api is not loaded */
+.header__link--deactive {
+    color:#888888;
+    cursor: not-allowed;
+}
+
+/* --- MAIN CONTENT --- */
+
+/* box row that contains all of a stat's info */
+.container__statsBox__graphBox__statBox {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+}
+
+/* contains the name of the stat on the graph */
+.container__statsBox__graphBox__statBox__type {
+    width: 10%;
+    height: 100%;
+    font-size: 3vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+/* the container where the bar is */
+.container__statsBox__graphBox__statBox__barBox {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* the bars in the graph */
+.container__statsBox__graphBox__statBox__barBox__bar {
+    background-color: #ee1515;
+    height: 80%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* stat number text in the bars */
+.container__statsBox__graphBox__statBox__barBox__bar p {
+    margin-left: 10px;
+}
+
+
+/* ----- IDS ----- */
+
+/* --- HEADER --- */
+
+/* the pokeball in the header */
+#header__image {
+    height: 7vh;
+    margin-left: 1vw;
+}
+
+/* --- MAIN CONTENT --- */
+
+/* main content of the page */
+#container {
+    width:100vw;
+    height:92vh;
+    font-size: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* contains the page title */
+#container__titleBox {
+    width:100vw;
+    height:6vh;
+    font-size: 3.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* contains the pokemon info below the title */
+#container__infoBox {
+    width:100vw;
+    height:30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* sets the background image for the pokemon */
+#container__infoBox__image {
+    width: 25vh;
+    height: 25vh;
+    background-image: url(/Images/pokeball.png);
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* the pokemon image loaded in */
+#container__infoBox__image__img {
+    width: 25vw;
+    height: 25vh;
+    object-fit: contain;
+}
+
+/* where the pokemon's stats is displayed */
+#container__statsBox {
+    width:100vw;
+    height:45vh;
+    font-size: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the container for the graph */
+#container__statsBox__graphBox {
+    width: 60vw;
+    height: 90%;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* contains the input section */
+#container__inputBox {
+    width:100vw;
+    height:11vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* contains the input */
+#container__inputBox__inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

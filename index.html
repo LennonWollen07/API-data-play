@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Stat Visualiser</title>
+
+    <!-- links to the CSS and JS files -->
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="/JS/script.js" defer></script>
+</head>
+
+<!-- page content -->
+<body>
+
+    <!-- the header -->
+    <header>
+
+        <!-- image in the header -->
+        <a href="/index.html">
+            <img src="/Images/pokeball.png" id="header__image">
+        </a>
+
+        <!-- header links -->
+        <a href="/index.html" class="header__link header__link--active">Home</a>
+        <a href="" class="header__link header__link--deactive">Stats Game</a>
+        <a href="" class="header__link header__link--deactive">Type Game</a>
+
+    </header>
+
+    <!-- main content -->
+    <div id="container">
+
+        <!-- contains the page title -->
+        <div id="container__titleBox">
+
+            <h1>Pokemon Stat Visualiser</h1>
+
+        </div>
+
+        <!-- contains the pokemon info -->
+        <div id="container__infoBox">
+
+            <!-- image of the pokemon -->
+            <div id="container__infoBox__image">
+
+                <img src="" id="container__infoBox__image__img">
+
+            </div>
+
+            <!-- name and type of pokemon -->
+            <p id="container__infoBox__text"></p>
+
+        </div>
+
+        <!-- section where the stats chart is -->
+        <div id="container__statsBox">
+
+            <!-- the box where stats are put -->
+            <p>Stats</p>
+            <div id="container__statsBox__graphBox">
+
+                <!-- HP -->
+                <div class="container__statsBox__graphBox__statBox">
+
+                    <div class="container__statsBox__graphBox__statBox__type">
+
+                        <p>HP:</p>
+
+                    </div>
+
+                    <div class="container__statsBox__graphBox__statBox__barBox">
+
+                        <div class="container__statsBox__graphBox__statBox__barBox__bar">
+                            
+                            <!-- stat number -->
+                            <p></p>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- attack -->
+                <div class="container__statsBox__graphBox__statBox">
+
+                    <div class="container__statsBox__graphBox__statBox__type">
+
+                        <p>ATK:</p>
+
+                    </div>
+
+                    <div class="container__statsBox__graphBox__statBox__barBox">
+
+                        <div class="container__statsBox__graphBox__statBox__barBox__bar">
+
+                            <!-- stat number -->
+                            <p></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- defense -->
+                <div class="container__statsBox__graphBox__statBox">
+
+                    <div class="container__statsBox__graphBox__statBox__type">
+
+                        <p>DEF:</p>
+
+                    </div>
+
+                    <div class="container__statsBox__graphBox__statBox__barBox">
+
+                       <div class="container__statsBox__graphBox__statBox__barBox__bar">
+
+                            <!-- stat number -->
+                            <p></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- special attack -->
+                <div class="container__statsBox__graphBox__statBox">
+
+                    <div class="container__statsBox__graphBox__statBox__type">
+
+                        <p>S.ATK:</p>
+
+                    </div>
+
+                    <div class="container__statsBox__graphBox__statBox__barBox">
+
+                        <div class="container__statsBox__graphBox__statBox__barBox__bar">
+
+                            <!-- stat number -->
+                            <p></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- special defense -->
+                <div class="container__statsBox__graphBox__statBox">
+
+                    <div class="container__statsBox__graphBox__statBox__type">
+
+                        <p>S.DEF:</p>
+
+                    </div>
+
+                    <div class="container__statsBox__graphBox__statBox__barBox">
+
+                        <div class="container__statsBox__graphBox__statBox__barBox__bar">
+
+                            <!-- stat number -->
+                            <p></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- speed -->
+                <div class="container__statsBox__graphBox__statBox">
+
+                    <div class="container__statsBox__graphBox__statBox__type">
+
+                        <p>SPD:</p>
+
+                    </div>
+
+                    <div class="container__statsBox__graphBox__statBox__barBox">
+
+                        <div class="container__statsBox__graphBox__statBox__barBox__bar">
+
+                            <!-- stat number -->
+                            <p></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- total -->
+                <div class="container__statsBox__graphBox__statBox">
+
+                    <div class="container__statsBox__graphBox__statBox__type">
+
+                        <p>TOTAL:</p>
+
+                    </div>
+
+                    <div class="container__statsBox__graphBox__statBox__barBox">
+
+                        <div class="container__statsBox__graphBox__statBox__barBox__bar">
+
+                            <!-- stat number -->
+                            <p></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- where the pokemon input is -->
+        <div id="container__inputBox">
+
+            <p>Enter a Pokemon</p>
+
+            <div id="container__inputBox__inputs">
+
+                <input type="text" value="" id="container__inputBox__inputs__text">
+                <input type="button" value="Submit" id="container__inputBox__inputs__button">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
