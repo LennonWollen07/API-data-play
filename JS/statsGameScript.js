@@ -7,6 +7,9 @@ let apiData;
 // loads api on entering the website
 window.addEventListener("DOMContentLoaded", fetchData);
 
+// variables
+gameMode = null;
+
 // ----- FUNCTIONS -----
 
 // ON START
@@ -65,6 +68,9 @@ const enableLinks = function() {
 };
 
 // ----- MAIN CONTENT -----
-document.querySelectorAll(".container__gameModes__modes__input").addEventListener("click", function() {
-    console.log("test click");
+document.querySelectorAll(".container__gameModes__modes__input").forEach(button => {
+    button.addEventListener("click", () => {
+        gameMode = button.value;
+        console.log(gameMode);
+    });
 });
