@@ -4,6 +4,7 @@
 * {
     margin: 0%;
     font-family: monospace;
+    cursor: default;
 }
 
 /* sets the header dimensions */
@@ -16,6 +17,16 @@ header {
 }
 
 /* ----- CLASSES ----- */
+
+/* --- UTILITY --- */
+
+.U-correct {
+    filter: sepia(100%) hue-rotate(90deg) saturate(500%);
+}
+
+.U-incorrect {
+    filter: sepia(100%) hue-rotate(-50deg) saturate(500%);
+}
 
 /* --- HEADER --- */
 
@@ -51,7 +62,7 @@ header {
 
 /* styles the input boxes at the top of the page */
 .container__gameModes__modes__input {
-    font-size: 1.5vh;
+    font-size: 2.5vh;
     margin-top: 5px;
 }
 
@@ -72,6 +83,25 @@ header {
     height:30vw;
     background-image: url(/Images/pokeball.png);
     background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* sets the size of the imported images */
+.container__gameSpace__column__image__img {
+    width: 25vw;
+    height: 25vw;
+}
+
+/* when hovering get darker */
+.container__gameSpace__column__image__img:not(.U-correct):not(.U-incorrect):hover {
+    filter: brightness(0.8);
+}
+/* when clicking get darker */
+.container__gameSpace__column__image__img:not(.U-correct):not(.U-incorrect):active {
+    filter: brightness(0.6);
 }
 
 
@@ -144,7 +174,7 @@ header {
 #container__points {
     width:100vw;
     height: 5vh;
-    font-size: 3vh;
+    font-size: 4vh;
     display: flex;
     align-items: center;
     justify-content: center;

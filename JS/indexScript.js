@@ -63,7 +63,6 @@ const enableLinks = function() {
     });
 
     deactiveLinks[0].href = "/statsGame.html"
-    // ADD THE OTHER GAME LATER OKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
 
 };
 
@@ -165,8 +164,10 @@ const populateUI = function() {
     
     // adds 0s to fit image format
     for (i = (3 - pokemonID.length); i > 0; i--) {
-       pokemonID = "0" + pokemonID
-    }
+
+       pokemonID = "0" + pokemonID;
+
+    };
 
     // display image
     document.getElementById("container__infoBox__image__img").src = `https://www.serebii.net/pokemon/art/${pokemonID}.png`;
@@ -220,7 +221,19 @@ setBarChart = function(pokemonStats, highestStat) {
     };
 
     // total bar
-    barChartBars[6].style.width = "100%";
+    let totalWidth = pokemonStats[6]
+
+    // ensure it dosent exceed 100%
+    if (totalWidth > 600) {
+
+        totalWidth = 600;
+
+    }
+
+    // set to a percentage of 600;
+    totalWidth = totalWidth / 6
+
+    barChartBars[6].style.width = `${totalWidth}%`;
     barChartBarsP[6].innerHTML = pokemonStats[6];
 
 };
