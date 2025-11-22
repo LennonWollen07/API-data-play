@@ -17,10 +17,11 @@ window.addEventListener("DOMContentLoaded", fetchData);
 // gets data from the api
 async function fetchData() {
 
+    //sets page to show pikachu
+    getJSON();
+
     // trys to get the data from api
     try {
-
-        // species data
 
         // get response
         const response = await fetch(`${apiURL}?limit=10000`);
@@ -45,6 +46,38 @@ async function fetchData() {
 
         console.error(err);
 
+    };
+
+};
+
+// gets pikachu JSON file then displays pikachu's data
+const getJSON = async function() {
+
+    try {
+
+        // get response
+        const response = await fetch("/JSON/pikachu.json")
+
+        // check response
+        if (!response.ok) {
+
+            throw new Error("response status =",response.status); 
+
+        };
+
+        // get pikachu data from JSON
+        pokemonData = await response.json();
+
+        // displays pikachu on the page
+        populateUI();
+
+    }
+
+    // if there is an error getting the json
+    catch(err) {
+
+        console.error(err)
+    
     };
 
 };

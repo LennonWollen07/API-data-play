@@ -20,12 +20,21 @@ header {
 
 /* --- UTILITY --- */
 
+/* used for correct inputs for the game */
 .U-correct {
     filter: sepia(100%) hue-rotate(90deg) saturate(500%);
 }
 
+/* used for incorrect inputs for the game */
 .U-incorrect {
     filter: sepia(100%) hue-rotate(-50deg) saturate(500%);
+}
+
+/* creates a flexbox where items are aligned to the center */
+.U-flexAlignJustify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* --- HEADER --- */
@@ -71,10 +80,7 @@ header {
     width:50vw;
     height:65vh;
     font-size: 2vw;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 /* conatiner hwere the pokemon image will be put */
@@ -84,9 +90,6 @@ header {
     background-image: url(/Images/pokeball.png);
     background-size: contain;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* sets the size of the imported images */
@@ -123,9 +126,6 @@ header {
 #container {
     width: 100vw;
     height: 92vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* contains the page title */
@@ -133,19 +133,13 @@ header {
     width:100vw;
     height:6vh;
     font-size: 3.5vh;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 /* holds the game modes section at the top of the page */
 #container__gameModes {
     width: 100vw;
     height: 6vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* contains the gamemode's title */
@@ -175,9 +169,6 @@ header {
     width:100vw;
     height: 5vh;
     font-size: 4vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* container for text at the bottom of the page */
@@ -185,7 +176,4 @@ header {
     width: 100vw;
     height: 10vh;
     font-size: 4vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

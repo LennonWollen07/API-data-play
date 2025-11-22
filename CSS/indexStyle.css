@@ -17,6 +17,15 @@ header {
 
 /* ----- CLASSES ----- */
 
+/* --- UTILITY --- */
+
+/* creates a flexbox where items are aligned to the center */
+.U-flexAlignJustify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* --- HEADER --- */
 
 /* styles the links in the header */
@@ -61,9 +70,6 @@ header {
     width: 10%;
     height: 100%;
     font-size: 3vh;
-    display: flex;
-    justify-content: right;
-    align-items: center;
 }
 
 /* the container where the bar is */
@@ -116,20 +122,14 @@ header {
     width:100vw;
     height:6vh;
     font-size: 3.5vh;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 /* contains the pokemon info below the title */
 #container__infoBox {
     width:100vw;
     height:30vh;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 /* sets the background image for the pokemon */
@@ -138,9 +138,6 @@ header {
     height: 25vh;
     background-image: url(/Images/pokeball.png);
     background-size: contain;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* the pokemon image loaded in */
@@ -155,10 +152,7 @@ header {
     width:100vw;
     height:45vh;
     font-size: 3vh;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* the container for the graph */
@@ -174,15 +168,5 @@ header {
 #container__inputBox {
     width:100vw;
     height:11vh;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* contains the input */
-#container__inputBox__inputs {
-    display: flex;
-    align-items: center;
-    justify-content: center;;
 }
